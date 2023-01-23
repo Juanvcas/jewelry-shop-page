@@ -1,0 +1,41 @@
+.main {
+	display: flex;
+	width: 100%;
+	height: 15rem;
+	list-style: none;
+	overflow-x: scroll;
+}
+
+.slide-cont {
+	display: inline-block;
+	min-width: 100%;
+	height: 100%;
+}
+
+.slide {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding: 5%;
+	border-radius: 1rem;
+}
+
+.slide-main {
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: rgb(253, 224, 210);
+}
+
+.slide-earrings {
+	justify-content: space-between;
+	align-items: center;
+	color: var(--thrFont);
+	background-color: black;
+}
+
+.earrings_image {
+	position: relative;
+	width: 60%;
+	height: 100%;
+}

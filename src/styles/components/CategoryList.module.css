@@ -1,0 +1,21 @@
+.main {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	list-style: none;
+	overflow-x: scroll;
+	border-top: solid 0.1rem var(--secFont);
+	border-bottom: solid 0.1rem var(--secFont);
+}
+
+.main li {
+	display: inline-block;
+}
+
+.main li a {
+	display: block;
+	padding: 1rem;
+	color: var(--secFont);
+	text-decoration: none;
+}
