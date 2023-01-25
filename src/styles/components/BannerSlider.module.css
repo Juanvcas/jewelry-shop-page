@@ -39,3 +39,7 @@
 	width: 60%;
 	height: 100%;
 }
+
+.earrings_image img {
+	object-fit: cover;
+}

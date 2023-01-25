@@ -8,7 +8,7 @@ export const CategoryList = () => {
 				<Link href={'/'}>Rings</Link>
 			</li>
 			<li>
-				<Link href={'/'}>Esrrings</Link>
+				<Link href={'/'}>Earrings</Link>
 			</li>
 			<li>
 				<Link href={'/'}>Necklaces</Link>

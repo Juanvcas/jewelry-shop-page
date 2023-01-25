@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { BannerSlider } from '@/components/Home/BannerSlider';
-import { CategoryList } from '@/components/Home/CategoryList';
-import s from '@/styles/Home.module.css';
+import { BannerSlider } from '../components/Home/BannerSlider';
+import { CategoryList } from '../components/Home/CategoryList.js';
+import s from '../styles/Home.module.css';
+import { RelevantProducts } from '@components/Home/RelevantProducts';
 
 const Home = () => {
 	return (
@@ -20,6 +21,11 @@ const Home = () => {
 				<section className={s.categoryList}>
 					<div className={`content-limit`}>
 						<CategoryList />
+					</div>
+				</section>
+				<section className={s.main_products}>
+					<div className={`${s['products-cont']} content-limit`}>
+						<RelevantProducts />
 					</div>
 				</section>
 			</main>

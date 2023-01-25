@@ -1,0 +1,37 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	/* padding: 0.5rem; */
+	/* border-radius: 1rem; */
+	/* box-shadow: 0 0 0.5rem var(--mainShadow); */
+}
+
+.main-cont {
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+.main_image {
+	position: relative;
+	width: 100%;
+	aspect-ratio: 1;
+}
+
+.main_image img {
+	object-fit: cover;
+	object-position: center;
+	border-radius: 1rem;
+}
+
+.main-cont > h3 {
+	margin-top: 0.5rem;
+}
+
+.main > p {
+	margin-top: 0.5rem;
+}
