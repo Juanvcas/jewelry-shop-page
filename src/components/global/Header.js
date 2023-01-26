@@ -7,12 +7,10 @@ export const Header = () => {
 	const [nav, setNav] = useState(false);
 	return (
 		<header className={s.main}>
-			<div className={`${s['main-cont']} content-limit`}>
-				<section className={s.main_search}>
-					<span>
-						<BiSearch />
-					</span>
-				</section>
+			<section className={s['main-cont']}>
+				<div className={s.main_search}>
+					<BiSearch />
+				</div>
 				<figure className={s.main_icon}>
 					<span>Jshop</span>
 				</figure>
@@ -20,7 +18,7 @@ export const Header = () => {
 					<BiMenu />
 				</menu>
 				{nav && <HeaderNav s={s} setNav={setNav} />}
-			</div>
+			</section>
 		</header>
 	);
 };

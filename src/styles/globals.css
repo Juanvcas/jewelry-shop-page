@@ -27,12 +27,16 @@ body {
 	color: var(--mainFont);
 }
 
+main {
+	padding: 6rem 0;
+}
+
 h1,
 h2 {
 	font-family: 'Libre Bodoni', serif;
 }
 
-.content-limit {
+section {
 	width: 90%;
 	max-width: 128rem;
 	height: auto;

@@ -6,13 +6,13 @@ export const BannerSlider = () => {
 		<ul className={s.main}>
 			<li className={s['slide-cont']}>
 				<div className={`${s['slide-main']} ${s['slide']}`}>
-					<h1>Jewelry Shop</h1>
-					<h3>¡Here, you can find anything jewell do you want!</h3>
+					<h1>Tienda Jewelry</h1>
+					<h3>¡Aqui puedes encontrar los mejores accesorios y joyería!</h3>
 				</div>
 			</li>
 			<li className={s['slide-cont']}>
 				<div className={`${s['slide-earrings']} ${s['slide']}`}>
-					<h2>Earrings</h2>
+					<h2>Aretas</h2>
 					<div className={s.earrings_image}>
 						<Image
 							src={

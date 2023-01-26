@@ -1,19 +1,12 @@
 // import { useFetch } from 'hooks/useFectch';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import { useFetch } from 'hooks/useFectch';
 import { endPoints } from 'services/api/endPoints';
 import { ProductTile } from '@components/global/ProductTile';
 
 export const RelevantProducts = () => {
 	const [products, setProducts] = useState([]);
-	// const data = useFetch(endPoints.products.getAllProducts);
-	useEffect(() => {
-		const fetchData = async () => {
-			const res = await fetch(endPoints.products.getAllProducts);
-			const jData = await res.json();
-			setProducts(jData);
-		};
-		fetchData();
-	}, []);
+	useFetch(endPoints.products.getAllProducts, setProducts);
 	return (
 		<>
 			{products?.map(

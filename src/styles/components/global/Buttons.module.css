@@ -1,0 +1,33 @@
+.LinkButtonL {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	margin-top: 2rem;
+	padding: 5%;
+	color: white;
+	font-size: 1.8rem;
+	text-decoration: none;
+	background-color: var(--mainFont);
+	border-radius: 1rem;
+}
+
+.LinkButtonSL {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	height: auto;
+	padding: 5%;
+	color: white;
+	text-decoration: none;
+	background-color: var(--mainFont);
+	border-radius: 1rem;
+}
+
+.LinkButtonSL svg {
+	width: 1.2rem;
+	height: 1.2rem;
+	margin-left: 1rem;
+}

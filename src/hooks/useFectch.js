@@ -1,17 +1,12 @@
 import { useEffect, useState } from 'react';
 
-export const useFetch = async (API) => {
-	const [data, setData] = useState([]);
-
+export const useFetch = async (API, setState) => {
 	useEffect(() => {
 		const fetchData = async () => {
 			const res = await fetch(API);
 			const jData = await res.json();
-			setData(jData);
+			setState(jData);
 		};
 		fetchData();
 	}, [API]);
-
-	console.log(data);
-	return data;
 };

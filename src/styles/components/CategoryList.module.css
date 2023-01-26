@@ -15,7 +15,7 @@
 
 .main li a {
 	display: block;
-	padding: 1rem;
+	padding: 1.6rem;
 	color: var(--secFont);
 	text-decoration: none;
 }

@@ -19,7 +19,7 @@ export const HeaderNav = ({ s, setNav }) => {
 					<Link href={'/'}>Catálogo</Link>
 				</li>
 				<li>
-					<Link href={'/'}>About</Link>
+					<Link href={'/'}>Nosotros</Link>
 				</li>
 			</ul>
 		</nav>
