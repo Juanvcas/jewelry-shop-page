@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-export const useFetch = async (API, setState) => {
+export const useFetch = async (API, setState, render) => {
 	useEffect(() => {
 		const fetchData = async () => {
 			const res = await fetch(API);
@@ -8,5 +8,5 @@ export const useFetch = async (API, setState) => {
 			setState(jData);
 		};
 		fetchData();
-	}, [API]);
+	}, [API || render]);
 };

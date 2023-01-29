@@ -1,14 +1,16 @@
+import { useContext } from 'react';
+import { AppContext } from 'context/AppContext';
 import Head from 'next/head';
 import Image from 'next/image';
-import Link from 'next/link';
 import { BannerSlider } from '../components/Home/BannerSlider';
-import { CategoryList } from '../components/Home/CategoryList.js';
-import { RelevantProducts } from '@components/Home/RelevantProducts';
+import { CategoryList } from '../components/global/CategoryList.js';
+import { ProductList } from '@components/global/ProductList';
 import { LinkButtonL, LinkButtonSL } from '@components/global/Buttons';
 import { BsWhatsapp } from 'react-icons/bs';
 import s from '../styles/Home.module.css';
 
 const Home = () => {
+	const { setCatalogList } = useContext(AppContext);
 	return (
 		<>
 			<Head>
@@ -22,18 +24,19 @@ const Home = () => {
 					</div>
 				</section>
 				<section className={s.categoryList}>
-					<CategoryList />
+					<CategoryList setState={setCatalogList} />
 				</section>
 				<section className={s.main_products}>
 					<div className={s['products-list']}>
 						<h2>Productos relevantes</h2>
 						<div className={s['products-cont']}>
-							<RelevantProducts />
+							<ProductList category={0} />
 						</div>
 						<LinkButtonL
-							href={'/'}
+							href={'/catalog'}
 							text={'Ver Productos'}
 							classes={s.produsts_button}
+							click={{ function: setCatalogList, value: 'all' }}
 						/>
 					</div>
 				</section>
@@ -42,7 +45,8 @@ const Home = () => {
 						<div className={s.contact_info}>
 							<h3>Puedes contactarnos por este link</h3>
 							<LinkButtonSL
-								href={'/'}
+								href={`https://wa.me/${process.env.NEXT_PUBLIC_WA_NUM}`}
+								target={'blank_'}
 								text={'Whatsapp'}
 								logo={<BsWhatsapp />}
 								classes={s['info-button']}

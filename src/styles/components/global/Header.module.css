@@ -23,9 +23,11 @@
 	height: 100%;
 }
 
-.main_icon {
+.main_icon a {
 	font-family: 'Libre Bodoni', serif;
 	font-size: 2rem;
+	color: var(--mainFont);
+	text-decoration: none;
 }
 
 .main_menu-button {
