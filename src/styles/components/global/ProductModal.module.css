@@ -1,0 +1,59 @@
+.main {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	max-width: 37.5rem;
+	height: 100vh;
+	background-color: white;
+	z-index: 20;
+}
+
+.info-cont {
+	overflow-x: auto;
+}
+
+.main_header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 6rem;
+}
+
+.main_header svg {
+	width: 3rem;
+	height: 3rem;
+}
+
+.main_images {
+	margin-top: 2rem;
+}
+
+.images {
+	position: relative;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 1;
+}
+
+.images img {
+	object-fit: cover;
+	object-position: center;
+	border-radius: 1rem;
+}
+
+.main_info {
+	margin-top: 4rem;
+}
+
+.main_info h3 {
+	margin-top: 2rem;
+}
+
+.main_button {
+	margin-bottom: 2rem;
+}

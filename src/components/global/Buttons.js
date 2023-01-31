@@ -1,11 +1,12 @@
 import Link from 'next/link';
 import s from '../../styles/components/global/Buttons.module.css';
 
-export const LinkButtonL = ({ href, text, classes, click }) => (
+export const LinkButtonL = ({ href, text, target, classes, click }) => (
 	<Link
-		className={`${s.LinkButtonL} ${classes}`}
 		href={href}
-		onClick={() => click.function(click.value)}
+		target={target}
+		className={`${s.LinkButtonL} ${classes}`}
+		onClick={() => click?.function(click.value)}
 	>
 		{text}
 	</Link>

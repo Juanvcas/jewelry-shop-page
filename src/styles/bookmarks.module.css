@@ -1,0 +1,18 @@
+.main {
+	width: 100%;
+	height: auto;
+}
+
+.main_title {
+	margin-top: 2rem;
+}
+
+.main_products {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto;
+	gap: 1rem;
+	margin-top: 2rem;
+	padding-top: 2rem;
+	border-top: solid 0.1rem var(--secFont);
+}

@@ -12,23 +12,11 @@ export const ProductList = ({ category }) => {
 				if (category !== 'all') {
 					return (
 						item.category.id === category && (
-							<ProductTile
-								key={index}
-								image={item.images[0]}
-								title={item.title}
-								price={item.price}
-							/>
+							<ProductTile key={index} product={item} />
 						)
 					);
 				} else {
-					return (
-						<ProductTile
-							key={index}
-							image={item.images[0]}
-							title={item.title}
-							price={item.price}
-						/>
-					);
+					return <ProductTile key={index} product={item} />;
 				}
 			})}
 		</>
