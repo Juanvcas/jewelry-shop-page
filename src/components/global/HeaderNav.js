@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import Link from 'next/link';
 import { BiX } from 'react-icons/bi';
 
@@ -13,7 +12,13 @@ export const HeaderNav = ({ s, setNav }) => {
 					<BiX />
 				</span>
 				<li>
+					<Link href={'/'}>Inicio</Link>
+				</li>
+				<li>
 					<Link href={'/catalog'}>Catálogo</Link>
+				</li>
+				<li>
+					<Link href={'/bookmarks'}>Bookmarks</Link>
 				</li>
 				<li>
 					<Link href={'/'}>Nosotros</Link>

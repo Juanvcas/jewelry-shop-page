@@ -1,9 +1,9 @@
 import { useState, useEffect, useContext } from 'react';
 import { AppContext } from '@context/AppContext';
 import Image from 'next/image';
-import { LinkButtonL } from './Buttons';
+import { LinkButtonL } from '../global/Buttons';
 import { BiArrowBack } from 'react-icons/bi';
-import s from '@styles/components/global/ProductModal.module.css';
+import s from '@styles/components/modals/ProductModal.module.css';
 import {
 	BsFillBookmarkPlusFill,
 	BsFillBookmarkCheckFill,

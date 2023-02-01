@@ -5,7 +5,11 @@ export const useFetch = async (API, setState, render) => {
 		const fetchData = async () => {
 			const res = await fetch(API);
 			const jData = await res.json();
-			setState(jData);
+			if (setState) {
+				setState(jData);
+			} else {
+				return jData;
+			}
 		};
 		fetchData();
 	}, [API || render]);
