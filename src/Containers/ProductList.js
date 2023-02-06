@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useFetch } from 'hooks/useFectch';
-import { ProductTile } from './ProductTile';
+import { ProductTile } from '../components/global/ProductTile';
 import { endPoints } from 'services/api/endPoints';
 
 export const ProductList = ({ category }) => {

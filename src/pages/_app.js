@@ -1,5 +1,6 @@
 import { AppProvider } from 'context/AppContext';
 import { Header } from '../components/global/Header';
+import { Footer } from '@components/global/Footer';
 import { BottomMenu } from '@components/global/BottomMenu';
 import MainContainer from 'Containers/MainContainer';
 import '../styles/globals.css';
@@ -10,7 +11,7 @@ export default function App({ Component, pageProps }) {
 			<MainContainer>
 				<Header />
 				<Component {...pageProps} />
-				<BottomMenu />
+				<Footer />
 			</MainContainer>
 		</AppProvider>
 	);

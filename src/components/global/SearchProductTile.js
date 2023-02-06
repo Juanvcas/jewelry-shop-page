@@ -6,11 +6,15 @@ export const SearchProductTile = ({
 	product,
 	setProductModal,
 	setProductModalValue,
+	setSearchModal,
+	setSearchValue,
 }) => {
 	const handlerModal = (e) => {
 		e.stopPropagation();
 		setProductModalValue(product);
 		setProductModal(true);
+		setSearchModal(false);
+		setSearchValue([]);
 	};
 
 	return (

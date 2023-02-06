@@ -1,0 +1,54 @@
+.main {
+	width: 100%;
+	height: auto;
+	padding: 2rem 0;
+	padding-bottom: 6em;
+	color: white;
+	background-color: black;
+}
+
+.main_nav {
+	display: flex;
+}
+
+.main_nav ul {
+	flex-grow: 1;
+	list-style: none;
+}
+
+.main_nav ul li {
+	margin: 1rem 0;
+}
+
+.main_nav ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+.nav_info {
+	flex-grow: 1;
+}
+
+.nav_info p {
+	margin: 1rem 0;
+}
+
+.main_credits {
+	margin-top: 2rem;
+}
+
+.main_credits p {
+	text-align: right;
+}
+
+.main_credits p a {
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+	.main {
+		padding-bottom: 4rem;
+	}
+}

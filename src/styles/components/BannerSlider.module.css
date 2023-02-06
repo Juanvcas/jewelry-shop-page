@@ -16,30 +16,87 @@
 	display: flex;
 	width: 100%;
 	height: 100%;
-	padding: 5%;
 	border-radius: 1rem;
 }
 
 .slide-main {
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-	background-color: bisque;
-}
-
-.slide-earrings {
-	justify-content: space-between;
+	display: flex;
 	align-items: center;
-	color: var(--thrFont);
-	background-color: black;
+	width: 100%;
+	height: 100%;
+	color: white;
+	background-color: #d89e4a;
+	border-radius: 1rem;
 }
 
-.earrings_image {
+.slide-main_info {
+	width: 50%;
+	height: auto;
+	padding: 5%;
+}
+
+.slide-main_info h2 {
+	font-size: 1.2rem;
+}
+
+.slide-main_image {
 	position: relative;
-	width: 60%;
+	width: 50%;
 	height: 100%;
 }
 
-.earrings_image img {
+.slide-main_image img {
 	object-fit: cover;
+	object-position: center;
+	border-radius: 0 1rem 1rem 0;
+	z-index: 0;
+}
+
+.slide-main_image span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, #d89e4a 5%, transparent 50%);
+}
+
+.sub-slide1 {
+	color: white;
+	background-color: black;
+}
+
+.sub-slide1 span {
+	background: linear-gradient(to right, black 5%, transparent 50%);
+}
+
+@media (min-width: 480px) {
+	.main {
+		height: 25rem;
+	}
+
+	.slide-main_info h2 {
+		font-size: 1.6rem;
+	}
+}
+
+@media (min-width: 580px) {
+	.main {
+		height: 35rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.main {
+		height: 50rem;
+	}
+
+	.slide-main_info h1 {
+		font-size: 3.2rem;
+	}
+
+	.slide-main_info h2 {
+		margin-top: 1rem;
+		font-size: 2rem;
+	}
 }

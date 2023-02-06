@@ -71,3 +71,31 @@
 	height: 100%;
 	background: linear-gradient(to right, gainsboro 5%, transparent 50%);
 }
+
+@media (min-width: 480px) {
+	.contact_slide {
+		height: 20rem;
+	}
+}
+
+@media (min-width: 580px) {
+	.products-cont {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (min-width: 768px) {
+	.products-cont {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.contact_slide {
+		height: 25rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.contact_slide {
+		height: 35rem;
+	}
+}

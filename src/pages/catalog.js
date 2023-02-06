@@ -1,6 +1,6 @@
 import { useContext, useState } from 'react';
 import { AppContext } from '@context/AppContext';
-const { ProductList } = require('@components/global/ProductList');
+const { ProductList } = require('Containers/ProductList');
 import { CategoryList } from '@components/global/CategoryList';
 import s from '@styles/catalog.module.css';
 

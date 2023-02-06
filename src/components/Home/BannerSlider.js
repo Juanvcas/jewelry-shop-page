@@ -1,28 +1,39 @@
 import Image from 'next/image';
 import s from '../../styles/components/BannerSlider.module.css';
+import { Slide } from './Slide';
 
 export const BannerSlider = () => {
 	return (
 		<ul className={s.main}>
 			<li className={s['slide-cont']}>
-				<div className={`${s['slide-main']} ${s['slide']}`}>
-					<h1>Tienda Jewelry</h1>
-					<h3>¡Aqui puedes encontrar los mejores accesorios y joyería!</h3>
+				<div className={`${s['slide-main']} ${s.slide}`}>
+					<div className={s['slide-main_info']}>
+						<h1>Jewelry Shop</h1>
+						<h2>Aqui puedes encontrar los mejores accesorios para ti!</h2>
+					</div>
+					<figure className={s['slide-main_image']}>
+						<Image
+							src={'https://i.postimg.cc/RZXFTLnW/portada1.jpg'}
+							alt='Mujer luciendo accesorios'
+							fill
+						/>
+						<span></span>
+					</figure>
 				</div>
 			</li>
 			<li className={s['slide-cont']}>
-				<div className={`${s['slide-earrings']} ${s['slide']}`}>
-					<h2>Aretas</h2>
-					<div className={s.earrings_image}>
-						<Image
-							src={
-								'https://i.postimg.cc/RVfnNNRb/pexels-dima-valkov-3266700.jpg'
-							}
-							alt={'Two gold earrings with a black background'}
-							fill
-						/>
-					</div>
-				</div>
+				<Slide
+					style={s['sub-slide1']}
+					title={'Aretas'}
+					text={
+						<>
+							Necesitas aretas para ese nuevo vestido?
+							<br />
+							¡Aquí las encuentras!
+						</>
+					}
+					image={'https://i.postimg.cc/RVfnNNRb/pexels-dima-valkov-3266700.jpg'}
+				/>
 			</li>
 		</ul>
 	);

@@ -54,6 +54,7 @@
 	position: absolute;
 	right: 0;
 	width: 60%;
+	max-width: 32rem;
 	height: 100%;
 	padding: 5%;
 	padding-top: 6rem;
@@ -67,6 +68,7 @@
 	right: 1rem;
 	width: 3.2rem;
 	height: 3.2rem;
+	z-index: 1;
 }
 
 .nav_close svg {
@@ -80,4 +82,64 @@
 	font-size: 2.4rem;
 	color: var(--mainFont);
 	text-decoration: none;
+}
+
+.main_nav span:nth-child(3) {
+	display: none;
+}
+
+@media (min-width: 1024px) {
+	.main_nav {
+		position: relative;
+		display: flex;
+		top: auto;
+		right: auto;
+		width: auto;
+		height: auto;
+		background-color: white;
+		z-index: auto;
+	}
+
+	.main_nav ul {
+		position: relative;
+		display: flex;
+		right: auto;
+		width: auto;
+		max-width: none;
+		height: auto;
+		padding: 0;
+		background-color: white;
+	}
+
+	.main_nav ul li {
+		margin-left: 2rem;
+	}
+
+	.main_nav ul li:nth-child(1) {
+		display: none;
+	}
+
+	.nav_close {
+		display: none;
+	}
+
+	.main_nav a {
+		display: block;
+		margin-bottom: auto;
+		font-size: 2.4rem;
+		color: var(--mainFont);
+		text-decoration: none;
+	}
+
+	.main_nav span:nth-child(3) {
+		display: block;
+		width: 3.2rem;
+		height: 3.2rem;
+		margin-left: 2rem;
+	}
+
+	.main_nav span:nth-child(3) svg {
+		width: 100%;
+		height: 100%;
+	}
 }

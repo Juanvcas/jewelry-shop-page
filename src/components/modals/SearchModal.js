@@ -22,7 +22,8 @@ export const SearchModal = () => {
 		const matches = products.filter(
 			(item) =>
 				item.title.toLowerCase().includes(text.toLowerCase()) ||
-				item.category.title.toLowerCase().includes(text.toLowerCase())
+				item.category.title.toLowerCase().includes(text.toLowerCase()) ||
+				item.tags[0].title.toLowerCase().includes(text.toLowerCase())
 		);
 		setSearchValue(matches);
 	};
@@ -55,6 +56,8 @@ export const SearchModal = () => {
 								product={item}
 								setProductModal={setProductModal}
 								setProductModalValue={setProductModalValue}
+								setSearchModal={setSearchModal}
+								setSearchValue={setSearchValue}
 							/>
 						))}
 					</section>

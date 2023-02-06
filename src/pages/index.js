@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { BannerSlider } from '../components/Home/BannerSlider';
 import { CategoryList } from '../components/global/CategoryList.js';
-import { ProductList } from '@components/global/ProductList';
+import { ProductList } from 'Containers/ProductList';
 import { LinkButtonL, LinkButtonSL } from '@components/global/Buttons';
 import { BsWhatsapp } from 'react-icons/bs';
 import s from '../styles/Home.module.css';

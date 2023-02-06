@@ -1,29 +1,18 @@
-import Link from 'next/link';
-import { BiX } from 'react-icons/bi';
+import { MainNav } from 'common/MainNav';
+import { SearchButton } from 'common/SearchButton';
+import { BiX, BiSearch } from 'react-icons/bi';
 
-export const HeaderNav = ({ s, setNav }) => {
+export const HeaderNav = ({ style, setNav, media }) => {
 	const closeNav = () => {
-		window.innerWidth <= 768 && setNav(false);
+		setNav && window.innerWidth <= 1024 && setNav(false);
 	};
 	return (
-		<nav className={s.main_nav} onClick={closeNav}>
-			<ul>
-				<span className={s.nav_close} onClick={closeNav}>
-					<BiX />
-				</span>
-				<li>
-					<Link href={'/'}>Inicio</Link>
-				</li>
-				<li>
-					<Link href={'/catalog'}>Catálogo</Link>
-				</li>
-				<li>
-					<Link href={'/bookmarks'}>Bookmarks</Link>
-				</li>
-				<li>
-					<Link href={'/'}>Nosotros</Link>
-				</li>
-			</ul>
+		<nav className={style.main_nav} onClick={closeNav}>
+			<span className={style.nav_close} onClick={closeNav}>
+				<BiX />
+			</span>
+			<MainNav />
+			{media && <SearchButton />}
 		</nav>
 	);
 };
