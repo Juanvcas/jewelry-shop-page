@@ -22,11 +22,11 @@
 	height: 2.4rem;
 }
 
-.main_menu a:nth-child(1) {
-	color: white;
-}
-
 .main_menu a svg {
 	width: 100%;
 	height: 100%;
+}
+
+.current {
+	color: white !important;
 }

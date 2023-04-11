@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 export const useFetch = async (API, setState, render) => {
 	useEffect(() => {
@@ -12,5 +12,5 @@ export const useFetch = async (API, setState, render) => {
 			}
 		};
 		fetchData();
-	}, [API || render]);
+	}, [API, render]);
 };

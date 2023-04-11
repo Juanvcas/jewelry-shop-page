@@ -1,16 +1,24 @@
-.main {
+.cont {
 	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 30;
+	background-color: #0008;
+}
+
+.main {
+	position: absolute;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	top: 0;
-	left: 0;
+	right: 0;
 	width: 100%;
 	max-width: 37.5rem;
-	height: 100vh;
+	height: 100%;
 	background-color: white;
-	z-index: 30;
 }
 
 .info-cont {
@@ -35,8 +43,12 @@
 
 .images {
 	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	width: 100%;
 	height: auto;
+	padding: 5%;
 	aspect-ratio: 1;
 }
 
@@ -44,6 +56,26 @@
 	object-fit: cover;
 	object-position: center;
 	border-radius: 1rem;
+	z-index: 0;
+}
+
+.images span {
+	position: relative;
+	display: block;
+	width: 4rem;
+	height: 4rem;
+	cursor: pointer;
+}
+
+.images span svg {
+	width: 100%;
+	height: 100%;
+	color: #fffb;
+	filter: drop-shadow(0 0 0.3rem var(--mainShadow));
+}
+
+.images span svg:hover {
+	color: white;
 }
 
 .main_info {
@@ -56,4 +88,13 @@
 
 .main_button {
 	margin-bottom: 2rem;
+}
+
+@media (min-width: 1024px) {
+	.images:hover span {
+		display: block;
+	}
+	.images span {
+		display: none;
+	}
 }

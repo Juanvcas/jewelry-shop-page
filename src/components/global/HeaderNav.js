@@ -4,7 +4,7 @@ import { BiX, BiSearch } from 'react-icons/bi';
 
 export const HeaderNav = ({ style, setNav, media }) => {
 	const closeNav = () => {
-		setNav && window.innerWidth <= 1024 && setNav(false);
+		setNav && window.innerWidth < 1024 && setNav(false);
 	};
 	return (
 		<nav className={style.main_nav} onClick={closeNav}>

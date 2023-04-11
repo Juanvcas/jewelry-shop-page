@@ -11,7 +11,7 @@ export const ProductList = ({ category }) => {
 			{products?.map((item, index) => {
 				if (category !== 'all') {
 					return (
-						item.category.id === category && (
+						item.category?.id === category && (
 							<ProductTile key={index} product={item} />
 						)
 					);
